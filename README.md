@@ -1,8 +1,6 @@
-# CMake For VisualStudio Code
+# CMake Syntax Highlighting
 
-[![Join the chat at https://gitter.im/twxs/vs.language.cmake](https://badges.gitter.im/twxs/vs.language.cmake.svg)](https://gitter.im/twxs/vs.language.cmake?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-This extension provides support for [CMake](http://www.cmake.org/) in [Visual Studio Code](https://code.visualstudio.com/).
+This extension provides [CMake](http://www.cmake.org/) syntax highlighting for [Visual Studio Code](https://code.visualstudio.com/).
 
 ![screencast](images/cmake1.gif)
 
@@ -44,17 +42,29 @@ The following Visual Studio Code settings are available for the Cmake extension.
 
 - `CMake: Online Help` to go to the CMake online documentation (according to the current cmake version). 
 
+## Local build
+```bash
+git clone https://github.com/zchrissirhcz/vscode-cmake-highlight.git
+cd vscode-cmake-highlight
+
+npm install -g vsce
+npm install typescript -g
+npm install
+...
+vsce package # generate the .vsix file
+```
+
+```js
+<reference lib="es2015" />
+```
+to
+```
+<reference lib="es2015" >
+```
+
 ## Acknowledgements
 
-This extension based on the TextMate Syntax from [this project](https://github.com/zyxar/Sublime-CMakeLists).
-
-
-## Contributors
-
-- [Stanislav Ionascu](https://github.com/stanionascu)
-- [Rostislav Kondratenko](https://github.com/rkondratenko)
-
-Feel free to contribute...
+This extension is based on [CMake For VisualStudio Code](https://github.com/twxs/vs.language.cmake).
 
 ## License
 
