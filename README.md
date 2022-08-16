@@ -2,6 +2,11 @@
 
 This extension provides [CMake](http://www.cmake.org/) syntax highlighting for [Visual Studio Code](https://code.visualstudio.com/).
 
+## Install
+Search and install **`cmake-highlight`** in VSCode extension marketplace:
+
+![search-and-install](images/search-and-install.png)
+
 ![screencast](images/cmake1.gif)
 
 ## Features
