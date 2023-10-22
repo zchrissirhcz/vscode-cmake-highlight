@@ -1,6 +1,6 @@
 {
     "name": "cmake-highlight",
-    "version": "0.0.1",
+    "version": "0.0.2-dev",
     "publisher": "zchrissirhcz",
     "displayName": "CMake Highlight",
     "description": "CMake language support for Visual Studio Code",
