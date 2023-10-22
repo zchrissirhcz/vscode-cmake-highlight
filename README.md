@@ -1,8 +1,9 @@
-# CMake Syntax Highlighting
+# VSCode CMake Highlight
 
 This extension provides [CMake](http://www.cmake.org/) syntax highlighting for [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Install
+
 Search and install **`cmake-highlight`** in VSCode extension marketplace:
 
 ![search-and-install](images/search-and-install.png)
@@ -12,7 +13,7 @@ Search and install **`cmake-highlight`** in VSCode extension marketplace:
 ## Features
 
 - Colorization
-- Completion Lists 
+- Completion Lists
 
 ![completion](images/cmake2.gif)
 
@@ -45,25 +46,29 @@ The following Visual Studio Code settings are available for the Cmake extension.
 
 ## Commands
 
-- `CMake: Online Help` to go to the CMake online documentation (according to the current cmake version). 
+- `CMake: Online Help` to go to the CMake online documentation (according to the current cmake version).
 
 ## Local build
+
 ```bash
 git clone https://github.com/zchrissirhcz/vscode-cmake-highlight.git
 cd vscode-cmake-highlight
 
-npm install -g vsce
+npm install -g @vscode/vsce
 npm install typescript -g
 npm install
 ...
 vsce package # generate the .vsix file
+# if your ~/.npmrc contains `prefix=~/.npm-global`, then use the following command
+# ~/.npm-global/bin/vsce package
 ```
 
+Change `index.d.ts`:
 ```js
 <reference lib="es2015" />
 ```
 to
-```
+```js
 <reference lib="es2015" >
 ```
 
