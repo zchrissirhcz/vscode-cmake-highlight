@@ -13,6 +13,11 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
+add_link_options(-fopenmp)
+
+add_library(hello hello.cpp)
+target_link_options(hello PUBLIC -fopenmp)
+
 # SET
 cmake_policy(SET CMP0057 NEW)
 

@@ -1,3 +1,6 @@
+## 0.0.3-dev
+- Add `target_link_options()` for highlight.
+
 ## 0.0.2
 - Add `add_compile_definitions()` for highlight.
 - Add `CMAKE_EXPORT_COMPILE_COMMANDS` for highlight.
