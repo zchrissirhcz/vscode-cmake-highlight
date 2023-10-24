@@ -11,7 +11,6 @@
         "type": "git",
         "url": "https://github.com/zchrissirhcz/vscode-cmake-highlight.git"
     },
-
     "bugs": {
         "url": "https://github.com/zchrissirhcz/vscode-cmake-highlight/issues"
     },
@@ -21,7 +20,9 @@
         "Syntax"
     ],
     "categories": [
-        "Programming Languages", "Snippets", "Other"
+        "Programming Languages",
+        "Snippets",
+        "Other"
     ],
     "icon": "images/icon.png",
     "galleryBanner": {
@@ -98,10 +99,10 @@
         "opener": "^1.4.2"
     },
     "devDependencies": {
-        "typescript": "^2.0.9",
-        "vscode": "^1.0.3",
+        "@types/mocha": "^2.2.33",
         "@types/node": "^6.0.47",
-        "mocha": "^3.1.2",
-        "@types/mocha": "^2.2.33"
+        "mocha": "^10.2.0",
+        "typescript": "^2.0.9",
+        "vscode": "^1.0.3"
     }
 }

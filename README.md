@@ -50,6 +50,12 @@ The following Visual Studio Code settings are available for the Cmake extension.
 
 ## Local build
 
+Install nodejs LTS from <https://nodejs.org/en/download> (instead of `apt` due to version too old):
+```bash
+node --version # v20.8.1
+npm --vresion # 10.1.0
+```
+
 ```bash
 git clone https://github.com/zchrissirhcz/vscode-cmake-highlight.git
 cd vscode-cmake-highlight
@@ -63,7 +69,7 @@ vsce package # generate the .vsix file
 # ~/.npm-global/bin/vsce package
 ```
 
-Change `index.d.ts`:
+Change `index.d.ts` (`node_modules/@types/node/index.d.ts:20:1`)
 ```js
 <reference lib="es2015" />
 ```
